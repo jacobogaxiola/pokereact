@@ -1,0 +1,11 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 150px));
+  gap: 12px;
+  justify-content: center;
+}
+@media (max-width: 560px) {
+  .board {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
